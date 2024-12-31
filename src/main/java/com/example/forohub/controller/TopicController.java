@@ -2,6 +2,8 @@ package com.example.forohub.controller;
 
 import com.example.forohub.domain.ValidationException;
 import com.example.forohub.domain.topic.*;
+import com.example.forohub.model.Topic;
+import com.example.forohub.security.error.TopicNotFoundException;
 import com.example.forohub.repository.*;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,7 +47,7 @@ public class TopicController {
                 topico.getAutor().getUsername(),
                 topico.getCurso()
         );
-        // Se genera la URL del recurso creado
+
         URI url = uriComponentsBuilder.path("/topicos/{id}").buildAndExpand(topico.getId()).toUri();
         return ResponseEntity.created(url).body(datosRespuestaTopico);
     }
@@ -71,7 +73,7 @@ public class TopicController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<DatosListadoTopico> actualizarTopico(
+    public ResponseEntity<ListTopic> actualizarTopico(
             @PathVariable Long id,
             @Valid @RequestBody UpdateTopic datosActualizarTopico) {
 

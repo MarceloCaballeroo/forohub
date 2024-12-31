@@ -27,8 +27,8 @@ public class ErrorSol {
     public ResponseEntity tratarErrorDeValidacion(ValidationException e){
         return ResponseEntity.badRequest().body(e.getMessage());
     }
-    @ExceptionHandler(TopicoNotFoundException.class)
-    public ResponseEntity tratarErrorTopicoNoEncontrado(TopicoNotFoundException e) {
+    @ExceptionHandler(TopicNotFoundException.class)
+    public ResponseEntity tratarErrorTopicoNoEncontrado(TopicNotFoundException e) {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
     }
     private record DatosErrorValidacion(String campo, String error){

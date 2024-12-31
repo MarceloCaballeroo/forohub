@@ -1,9 +1,9 @@
 package com.example.forohub.controller;
 
-import src.main.java.com.example.forohub.model.User;
-import src.main.java.com.example.forohub.security.UserPassAuthToken;
-import src.main.java.com.example.forohub.domain.user.DataAuthUser;
-import src.main.java.com.example.forohub.security.TokenService;
+import com.example.forohub.model.User;
+import com.example.forohub.security.UserPassAuthToken;
+import com.example.forohub.domain.user.DataAuthUser;
+import com.example.forohub.security.TokenService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

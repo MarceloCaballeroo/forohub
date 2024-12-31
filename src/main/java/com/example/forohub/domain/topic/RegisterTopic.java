@@ -1,6 +1,6 @@
 package com.example.forohub.domain.topic;
 
-import src.main.java.com.example.forohub.model.User;
+import com.example.forohub.model.User;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import java.time.LocalDateTime;

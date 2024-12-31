@@ -1,6 +1,6 @@
 package com.example.forohub.domain.topic;
 
-import src.main.java.com.example.forohub.model.Topic;
+import com.example.forohub.model.Topic;
 
 import java.time.LocalDateTime;
 
