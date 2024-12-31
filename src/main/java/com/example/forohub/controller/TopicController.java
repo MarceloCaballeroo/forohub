@@ -98,7 +98,7 @@ public class TopicController {
 
         topicoRepository.save(topico);
 
-        return ResponseEntity.ok(new DatosListadoTopico(topico));
+        return ResponseEntity.ok(new ListTopic(topico));
     }
 
     @DeleteMapping("/{id}")
