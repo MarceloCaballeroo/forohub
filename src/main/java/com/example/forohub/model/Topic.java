@@ -37,4 +37,60 @@ public class Topic {
         this.autor = datos.autor();
         this.curso = datos.curso();
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getMensaje() {
+        return mensaje;
+    }
+
+    public void setMensaje(String mensaje) {
+        this.mensaje = mensaje;
+    }
+
+    public LocalDateTime getFechaCreacion() {
+        return fechaCreacion;
+    }
+
+    public void setFechaCreacion(LocalDateTime fechaCreacion) {
+        this.fechaCreacion = fechaCreacion;
+    }
+
+    public StatusTopic getStatus() {
+        return status;
+    }
+
+    public void setStatus(StatusTopic status) {
+        this.status = status;
+    }
+
+    public User getAutor() {
+        return autor;
+    }
+
+    public void setAutor(User autor) {
+        this.autor = autor;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
 }

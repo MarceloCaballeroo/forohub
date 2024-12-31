@@ -41,6 +41,14 @@ public class User implements UserDetails {
         return login;
     }
 
+    public Long getId() {
+        return id; // Método agregado
+    }
+
+    public String getLogin() {
+        return login; // Método agregado
+    }
+
     @Override
     public boolean isAccountNonExpired() {
         return true;
