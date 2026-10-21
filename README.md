@@ -72,4 +72,4 @@ Es un proyecto formativo: cubre el ciclo completo de una API segura (modelo, mig
 
 ## Autor
 
-Marcelo Caballero Olave · [LinkedIn](https://www.linkedin.com/in/marcelo-caballero-olave) · [Portafolio](https://portafolio.marcelo-caballero.workers.dev/)
+Marcelo Caballero Olave · [LinkedIn](https://www.linkedin.com/in/marcelo-caballero-olave) · [Portafolio](https://marcelocaballero.me/)
